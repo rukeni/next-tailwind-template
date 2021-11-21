@@ -1,0 +1,12 @@
+# Ignore artifacts:
+build
+coverage
+.next
+# Ignore all HTML files:
+*.html
+node_modules
+base.css
+out/*
+lottie/*
+.history
+amplify
