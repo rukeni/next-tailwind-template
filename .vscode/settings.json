@@ -1,0 +1,5 @@
+{
+  "editor.codeActionsOnSave": { "source.fixAll.eslint": true },
+  "tailwindCSS.experimental.classRegex": ["ClassName\\s*=\\s*[\"'`](.*)[\"'`]"],
+  "typescript.tsdk": "node_modules/typescript/lib"
+}
