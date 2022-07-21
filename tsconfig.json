@@ -19,6 +19,6 @@
     "strict": true,
     "target": "ES5"
   },
-  "exclude": [],
+  "exclude": ["storybook-static"],
   "include": ["next-env.d.ts", "src/**/*"]
 }

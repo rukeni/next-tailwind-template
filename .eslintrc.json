@@ -11,17 +11,20 @@
     "plugin:react/jsx-runtime",
     "plugin:tailwindcss/recommended"
   ],
+  "ignorePatterns": ["**/node_modules/", "**/dist/", "**/build/", "**/storybook-static/", "**/storybook-static/**/*", "jest.config.js", "jest.setup.js"],
   "overrides": [
     {
       "extends": [
         "plugin:jest-dom/recommended",
         "plugin:jest/recommended",
         "plugin:jest/style",
-        "plugin:testing-library/react"
+        "plugin:testing-library/react",
+        "plugin:storybook/recommended"
       ],
       "files": [
         "**/__tests__/**/*.@(j|t)s?(x)",
-        "**/?(*.)+(spec|test).@(j|t)s?(x)"
+        "**/?(*.)+(spec|test).@(j|t)s?(x)",
+        "**/?(*.)+(stories).@(j|t)s?(x)"
       ]
     },
     {
@@ -29,7 +32,9 @@
       "rules": {
         "@typescript-eslint/no-unsafe-assignment": "off",
         "@typescript-eslint/no-unsafe-call": "off",
-        "@typescript-eslint/no-var-requires": "off"
+        "@typescript-eslint/no-var-requires": "off",
+        "storybook/hierarchy-separator": "error",
+        "storybook/default-exports": "off"
       }
     }
   ],
