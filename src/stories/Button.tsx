@@ -1,5 +1,7 @@
 import './button.css';
 
+import React from 'react';
+
 interface ButtonProps {
   /**
    * What background color to use
@@ -26,7 +28,7 @@ interface ButtonProps {
 /**
  * Primary UI component for user interaction
  */
-const Button = ({
+export const Button = ({
   backgroundColor,
   label,
   primary = false,
@@ -38,7 +40,7 @@ const Button = ({
     : 'storybook-button--secondary';
   return (
     <button
-      className={['storybook-button', `storybook-button--${size}`, mode].join(
+      className={['storybook-button', `storybook-button--${size} `, mode].join(
         ''
       )}
       style={{ backgroundColor }}
@@ -46,8 +48,7 @@ const Button = ({
       {...props}
     >
       {label}
+      <span className="bg-indigo-500 text-blue-500">데이터</span>
     </button>
   );
 };
-
-export default Button;
