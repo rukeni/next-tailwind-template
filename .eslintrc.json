@@ -93,7 +93,8 @@
     "sort-keys-fix/sort-keys-fix": "warn",
     "tailwindcss/classnames-order": ["error", { "officialSorting": true }],
     "trim/class-name": "warn",
-    "typescript-sort-keys/interface": "warn"
+    "typescript-sort-keys/interface": "warn",
+    "jsx-quotes": ["error", "prefer-single"]
   },
   "settings": {
     "import/resolver": { "typescript": { "alwaysTryTypes": true } }
