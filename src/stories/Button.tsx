@@ -44,11 +44,11 @@ export const Button = ({
         ''
       )}
       style={{ backgroundColor }}
-      type="button"
+      type='button'
       {...props}
     >
       {label}
-      <span className="bg-indigo-500 text-blue-500">데이터</span>
+      <span className='bg-indigo-500 text-blue-500'>데이터</span>
     </button>
   );
 };

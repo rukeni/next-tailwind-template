@@ -6,12 +6,14 @@
     "build": "next build",
     "dev": "next dev",
     "lint": "next lint",
+    "fix": "pretty-quick --staged",
     "start": "next start",
     "test": "jest --coverage",
     "test:watch": "jest --watch",
     "test:duplicate": "jscpd --pattern \"src/**/*\"",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "prepare": "husky install"
   },
   "sideEffects": false,
   "resolutions": {
@@ -40,6 +42,8 @@
     "@storybook/manager-webpack5": "^6.5.9",
     "@storybook/react": "^6.5.9",
     "@storybook/testing-library": "^0.0.13",
+    "@testing-library/cypress": "^8.0.3",
+    "@testing-library/dom": "^8.17.1",
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.3.0",
     "@testing-library/user-event": "^14.2.0",
@@ -51,11 +55,13 @@
     "@typescript-eslint/eslint-plugin": "^5.28.0",
     "@typescript-eslint/parser": "^5.28.0",
     "babel-loader": "^8.2.5",
+    "cypress": "^10.6.0",
     "eslint": "^8.17.0",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-config-airbnb-typescript": "^17.0.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-import-resolver-typescript": "^2.7.1",
+    "eslint-plugin-cypress": "^2.12.1",
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-jest": "^26.5.3",
     "eslint-plugin-jest-dom": "^4.0.2",
@@ -71,15 +77,24 @@
     "eslint-plugin-testing-library": "^5.5.1",
     "eslint-plugin-trim": "^0.3.1",
     "eslint-plugin-typescript-sort-keys": "^2.1.0",
+    "husky": "^8.0.0",
     "jest": "^28.1.1",
     "jest-environment-jsdom": "^28.1.1",
+    "jest-plugin-context": "^2.9.0",
+    "lint-staged": "^13.0.3",
     "postcss": "^8.4.14",
     "postcss-flexbugs-fixes": "^5.0.2",
     "postcss-preset-env": "^7.7.1",
     "prettier": "^2.7.0",
+    "start-server-and-test": "^1.14.0",
     "storybook-css-modules-preset": "^1.1.1",
     "tailwindcss": "^3.1.2",
     "tsconfig-paths-webpack-plugin": "^3.5.2",
     "typescript": "^4.7.3"
+  },
+  "lint-staged": {
+    "**/*.{js,jsx,ts,tsx}": [
+      "npx prettier --write"
+    ]
   }
 }

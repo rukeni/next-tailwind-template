@@ -28,7 +28,7 @@
     "target": "ES5"
   },
   "exclude": [
-    "storybook-static"
+    "storybook-static",
   ],
   "include": [
     "next-env.d.ts",

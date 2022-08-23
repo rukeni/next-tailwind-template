@@ -45,3 +45,8 @@ yarn-error.log*
 @next-swc*
 
 storybook-static
+
+# cypress
+cypress/**/*.ts
+cypress/**/*.js
+cypress/fixtures/**/*
