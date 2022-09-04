@@ -3275,6 +3275,13 @@
   dependencies:
     "@types/istanbul-lib-report" "*"
 
+"@types/jest-plugin-context@^2.9.5":
+  version "2.9.5"
+  resolved "https://registry.yarnpkg.com/@types/jest-plugin-context/-/jest-plugin-context-2.9.5.tgz#3422547e1d267841a4fbd0647f37afe5fa091af0"
+  integrity sha512-AMkXriHUk84gBngUMS5mDQZ0/YATPY8wHXwiW/+hVG8SkbEG0PjiNZeoDz39F+tIlHNeFEBaLox4o32wUA5rmw==
+  dependencies:
+    "@types/jest" "*"
+
 "@types/jest@*", "@types/jest@^28.1.1":
   version "28.1.1"
   resolved "https://registry.yarnpkg.com/@types/jest/-/jest-28.1.1.tgz#8c9ba63702a11f8c386ee211280e8b68cb093cd1"
