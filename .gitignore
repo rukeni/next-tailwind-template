@@ -50,3 +50,5 @@ storybook-static
 cypress/**/*.ts
 cypress/**/*.js
 cypress/fixtures/**/*
+
+.history
