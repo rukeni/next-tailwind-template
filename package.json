@@ -84,6 +84,7 @@
     "jest-environment-jsdom": "^28.1.1",
     "jest-plugin-context": "^2.9.0",
     "lint-staged": "^13.0.3",
+    "msw": "^0.47.3",
     "postcss": "^8.4.14",
     "postcss-flexbugs-fixes": "^5.0.2",
     "postcss-preset-env": "^7.7.1",
