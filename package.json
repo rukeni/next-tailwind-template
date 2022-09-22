@@ -99,5 +99,8 @@
     "**/*.{js,jsx,ts,tsx}": [
       "npx prettier --write"
     ]
+  },
+  "msw": {
+    "workerDirectory": "public"
   }
 }
