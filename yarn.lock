@@ -6323,11 +6323,6 @@ eslint-plugin-testing-library@^5.5.1:
   dependencies:
     "@typescript-eslint/utils" "^5.13.0"
 
-eslint-plugin-trim@^0.3.1:
-  version "0.3.1"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-trim/-/eslint-plugin-trim-0.3.1.tgz#9fc4db5368b32388338924d104d6c4c820834085"
-  integrity sha512-IOgxQwQXqvl202jF1zlz+Pz1YFPwq/+wUupP5Zh9yZw2sezood9kQNcnv5UdNXNyDbYBFexOh/PLU+OGAECkUg==
-
 eslint-plugin-typescript-sort-keys@^2.1.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/eslint-plugin-typescript-sort-keys/-/eslint-plugin-typescript-sort-keys-2.1.0.tgz#f51764518aa512d83df9ba68ab2520b7b85ece2d"
